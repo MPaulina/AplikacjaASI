@@ -1,7 +1,7 @@
 AplikacjaASI
 ============
 
-P&amp;S - dziewczyny Rubiego.
+P&amp;S - dziewczyny Rubiego. :)
 
 
 Skład:
