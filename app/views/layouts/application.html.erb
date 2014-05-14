@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MyGist</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h2 class="panel-title">Gists</h2>
+        </div>
+
+<div id="user-widget">
+  <% if current_user %>
+    Welcome <strong><%= current_user.name %></strong>!
+    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+  <% else %>
+    <%= link_to "Sign in with GitHub", "/auth/github", id: "sign_in" %>
+  <% end %>
+</div>
+       
+        <div class="panel-body">
+          <a href="/gists/new" class="list-group-item">New gist</a>
+          <a href="/gists" class="list-group-item">All gists</a>
+          <a href="/gists/search" class="list-group-item">Search gists</a>
+        </div>
+
+        <div class="container">
+          <%= yield %>           
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

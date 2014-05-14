@@ -1,0 +1,21 @@
+<div class="show_gists">
+<br><br>
+
+<strong>Snippet:</strong>
+  </br></br>  
+    <%= raw Pygments.highlight(gist.snippet) %>
+<strong>Lang:</strong>
+    <%= gist.lang %>
+  </br></br>
+<strong>Description:</strong> 
+    <%= gist.description %>
+  </br></br></br>
+
+     <%= link_to 'Show', gist, :class=>"btn btn-info" %>
+     <%= link_to 'Edit', edit_gist_path(gist), :class=>"btn btn-info" %>
+     <%= link_to 'Destroy', gist, :class=>"btn btn-info", method: :delete, data: { confirm: 'Are you sure?'} %>
+    
+    </br></br>
+
+</div>
+<br><br>
