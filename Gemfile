@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.4'
 
-gruop :development do
+group :development do
   gem 'sqlite3', '1.3.9'
   gem 'quiet_assets'
 end

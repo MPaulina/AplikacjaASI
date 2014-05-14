@@ -2,7 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.4'
 
-gem 'sqlite3', '1.3.9', group: [:development, :test]
+gruop :development do
+  gem 'sqlite3', '1.3.9'
+  gem 'quiet_assets'
+end
 
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -12,8 +15,6 @@ gem 'jbuilder', '~> 1.2'
 gem 'pygments.rb', '0.5.4'
 gem 'redcarpet', '3.1.1'
 gem 'rspec-rails'
-  gem 'quiet_assets'
-
 
 group :production do
   gem 'pg', '0.15.1'
