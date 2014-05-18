@@ -1,7 +1,7 @@
 AplikacjaASI
 ============
-Deadline oddawania projektu przesunięty na środę - 21.05.
-============
+<pre>Deadline oddawania projektu przesunięty na środę - 21.05. </pre>
+
 
 P&amp;S - dziewczyny Rubiego. :)
 
