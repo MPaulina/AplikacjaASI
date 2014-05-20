@@ -12,7 +12,7 @@ Link:
 http://dziewczynyrubiego.shellyapp.com
 
 
-TRAVIS:
+TRAVIS:  
 [![Build Status](https://travis-ci.org/MPaulina/AplikacjaASI.svg?branch=master)](https://travis-ci.org/MPaulina/AplikacjaASI)
 
 Gemy: 
