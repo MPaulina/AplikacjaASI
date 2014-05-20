@@ -3,10 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.4'
 
 group :development do
-gem 'sqlite3', '1.3.9'
   gem 'quiet_assets'
+  gem 'sqlite3', '1.3.8'
 end
-
 
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -15,7 +14,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'pygments.rb', '0.5.4'
 gem 'redcarpet', '3.1.1'
-
+gem 'therubyracer'
+gem 'rake', '10.3.2'
+gem 'execjs'
 
 group :development, :test do
   gem 'pry'
@@ -26,7 +27,7 @@ group :development, :test do
 end
 
 group :production do
-#gem 'pg', '0.15.1'
+  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
 
