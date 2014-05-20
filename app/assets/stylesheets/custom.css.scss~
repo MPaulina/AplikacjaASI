@@ -6,7 +6,7 @@ html {
 }
 
 body {
-	background-color: 	#ff9933;
+background-color: 	#ff9933;
 }
 
 th {

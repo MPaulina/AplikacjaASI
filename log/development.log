@@ -14057,3 +14057,146 @@ DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a rel
   Rendered gists/_gist.html.erb (8.6ms)
   Rendered gists/index.html.erb within layouts/application (10.3ms)
 Completed 200 OK in 34ms (Views: 28.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-20 14:51:56 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (278.5ms)
+  Rendered gists/index.html.erb within layouts/application (298.1ms)
+Completed 200 OK in 535ms (Views: 496.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-20 14:52:51 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (271.6ms)
+  Rendered gists/index.html.erb within layouts/application (290.9ms)
+Completed 200 OK in 526ms (Views: 487.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-20 14:56:24 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (280.2ms)
+  Rendered gists/index.html.erb within layouts/application (300.9ms)
+Completed 200 OK in 1928ms (Views: 1890.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-20 15:01:24 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (273.4ms)
+  Rendered gists/index.html.erb within layouts/application (289.2ms)
+Completed 200 OK in 1912ms (Views: 1874.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-20 15:01:29 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+  [1m[35mGist Load (0.8ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (45.3ms)
+  Rendered gists/index.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 81ms (Views: 73.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-20 15:01:31 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+  [1m[35mGist Load (0.8ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (40.5ms)
+  Rendered gists/index.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 73ms (Views: 66.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-20 15:01:32 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+  [1m[35mGist Load (0.8ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (42.3ms)
+  Rendered gists/index.html.erb within layouts/application (45.5ms)
+Completed 200 OK in 72ms (Views: 65.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-20 15:01:32 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (41.8ms)
+  Rendered gists/index.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 73ms (Views: 67.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-20 15:01:33 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+  [1m[35mGist Load (0.6ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (40.6ms)
+  Rendered gists/index.html.erb within layouts/application (43.5ms)
+Completed 200 OK in 70ms (Views: 64.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-20 15:02:45 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (272.2ms)
+  Rendered gists/index.html.erb within layouts/application (290.0ms)
+Completed 200 OK in 1912ms (Views: 1874.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-20 15:10:14 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/Github/AplikacjaASI/app/models/gist.rb:25)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (278.4ms)
+  Rendered gists/index.html.erb within layouts/application (300.6ms)
+Completed 200 OK in 537ms (Views: 499.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-20 15:10:19 +0200
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-20 15:10:20 +0200
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-20 15:10:28 +0200
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-20 15:10:30 +0200
+(facebook) Request phase initiated.
