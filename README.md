@@ -3,7 +3,8 @@ P&S - dziewczyny Rubiego
 
 <pre>Deadline oddwania projektu przesunięty na środę - 21.05. </pre>
 
-Skład:- Sabina Litke,
+Skład:
+- Sabina Litke,
 - Paulina Marciniak
 
 
