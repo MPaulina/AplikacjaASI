@@ -104,7 +104,8 @@ strong {
 }
 
 .user-widget {
-	font-size: 18px;	
+	font-size: 18px;
+background-color: 	#ff9933;	
 }
 
 .groups {
@@ -114,6 +115,7 @@ strong {
 .wylogowanie {
 	font-size: 14px;
 	background-color: 	#ff9933;
+	text-align: right;
 }
 
 .log {
