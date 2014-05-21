@@ -6,7 +6,7 @@ html {
 }
 
 body {
-background-color: 	#ff9933;
+	background-color: 	#ff9933;
 }
 
 th {
@@ -104,7 +104,7 @@ strong {
 }
 
 .user-widget {
-	font-size: 16px;
+	font-size: 18px;
 	
 }
 
