@@ -113,6 +113,7 @@ strong {
 }
 
 .wylogowanie {
+	font-size: 10px;
 	background-color: 	#ff9933;
 	text-align: right;
 	margin-right: 30px;
