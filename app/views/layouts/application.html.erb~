@@ -12,14 +12,14 @@
 
  <div class="user-widget">
    <% if current_user %>
-     <div class="alert alert-info">
+     <div class="alert alert-warning">
        Welcome <strong><%= current_user.name %></strong>
      </div>  
 	
      </br>
      
      <div class="wylogowanie">
-	 <%= link_to "Sign out", signout_path, id: "sign_out" %>
+	 <%= link_to "Sign out", signout_path, id: "sign_out", class: "btn btn-lg btn-default" %>
      </div>
    <% else %>      
      <nav class="navbar navbar-default" role="navigation">
@@ -47,7 +47,7 @@
         <%= link_to "All gists", gists_path, class: "list-group-item" %>
 	<%= link_to "Search gists", searchgist_path, class: "list-group-item" %>
         <% if current_user %>
-          <%= link_to "New Group", new_group_path, class: "list-group-item" %>
+          <%= link_to "New group", new_group_path, class: "list-group-item" %>
         <% end %>
       </div>
 
