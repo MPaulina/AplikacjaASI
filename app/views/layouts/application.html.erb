@@ -12,12 +12,10 @@
 
  <div class="user-widget">
    <% if current_user %>
-     <div class="alert alert-success">
+     <div class="alert alert-warning">
        Welcome <strong><%= current_user.name %></strong>
      </div>  
-	
-     </br>
-     
+    
      <div class="wylogowanie">
 	 <%= link_to "Sign out", signout_path, id: "sign_out", class: "btn btn-lg btn-default" %>
      </div>
