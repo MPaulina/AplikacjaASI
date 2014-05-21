@@ -1,6 +1,6 @@
 MyGist::Application.routes.draw do
   root to: "gists#index"
-  get "gists/search"
+  match 'gists-search', to: "gists#search", as: 'searchgist', via: [:get,:post]
   resources :gists
   resources :groups, only: [:new, :create, :edit, :update, :destroy]
 

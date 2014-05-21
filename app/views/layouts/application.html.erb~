@@ -36,8 +36,7 @@
       <div class="panel-body">
         <%= link_to "New gist", new_gist_path, class: "list-group-item" %>
         <%= link_to "All gists", gists_path, class: "list-group-item" %>
-	<a href="/gists/search" class="list-group-item">Search gists</a>        
-<!--<%= link_to "Search gists", searchgist_path, class: "list-group-item" %>-->
+	<a href="/gists/search" class="list-group-item">Search gists</a>
         <% if current_user %>
           <%= link_to "New Group", new_group_path, class: "list-group-item" %>
         <% end %>

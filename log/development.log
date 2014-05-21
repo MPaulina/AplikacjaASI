@@ -14351,3 +14351,28 @@ Processing by GistsController#index as HTML
   Rendered gists/_gist.html.erb (15.5ms)
   Rendered gists/index.html.erb within layouts/application (22.5ms)
 Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-21 12:12:31 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.5ms)[0m  SELECT  "gists".* FROM "gists"   ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (292.8ms)
+  Rendered gists/index.html.erb within layouts/application (322.2ms)
+Completed 200 OK in 523ms (Views: 498.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/gists-search" for 127.0.0.1 at 2014-05-21 12:12:35 +0200
+Processing by GistsController#search as HTML
+  Rendered gists/search.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists?utf8=%E2%9C%93&search=c&commit=Search" for 127.0.0.1 at 2014-05-21 12:12:41 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"c", "commit"=>"Search"}
+  [1m[35mGist Load (0.4ms)[0m  SELECT  "gists".* FROM "gists"  WHERE (lang LIKE '%c%')  ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  Rendered gists/_gist.html.erb (9.4ms)
+  Rendered gists/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.4ms)
