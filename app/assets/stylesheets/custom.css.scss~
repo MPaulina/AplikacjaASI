@@ -116,7 +116,7 @@ strong {
 	background-color: 	#ff9933;
 	text-align: right;
 	margin-right: 30px;
-	margin-top -20px;
+	margin-top -10px;
 }
 
 .log {
