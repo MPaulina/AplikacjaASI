@@ -10,11 +10,15 @@
 </head>
 <body>
 
- <div id="user-widget">
+ <div class="user-widget">
    <% if current_user %>
-     Welcome <strong><%= current_user.name %></strong>
-       </br>          
-	 <%= link_to "Sign out", signout_path, id: "sign_out", class: "btn btn-lg btn-default" %>
+     <div class="alert alert-info">
+       Welcome <strong><%= current_user.name %></strong>
+     </div>  
+	
+     </br>
+          
+	 <%= link_to "Sign out", signout_path, id: "sign_out" %>
    <% else %>      
      <nav class="navbar navbar-default" role="navigation">
        <ul class="nav navbar-nav">
