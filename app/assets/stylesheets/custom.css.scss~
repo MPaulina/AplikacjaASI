@@ -104,8 +104,16 @@ strong {
 }
 
 .user-widget {
+	font-size: 18px;	
+}
+
+.groups {
 	font-size: 18px;
-	
+}
+
+.wylogowanie {
+	font-size: 14px;
+	text-align: left;
 }
 
 
