@@ -1,7 +1,7 @@
 MyGist::Application.routes.draw do
   root to: "gists#index"
   get "gists/search"
-  resources :gists
+ resources :gists
   resources :groups, only: [:new, :create, :edit, :update, :destroy]
 
   match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]

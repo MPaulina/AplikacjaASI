@@ -15,13 +15,6 @@
           Welcome <strong><%= current_user.name %></strong>!
           <%= link_to "Sign out", signout_path, id: "sign_out" %>
         <% else %>      
-	<!--	<%= link_to "Sign in with GitHub", "/auth/github", id: "sign_in", class: "btn btn-lg btn-default" %>
-
-	</br>
-
-          <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in", class: "btn btn-lg btn-default" %>   
-   -->
-     
 
 <nav class="navbar navbar-default" role="navigation">
 	<ul class="nav navbar-nav">
@@ -33,6 +26,7 @@
 				 </ul> </li> </ul> </nav>
  <% end %>
  </div>
+
   <div class="col-sm-4">
     <div class="panel panel-primary">
       <div class="panel-heading">
@@ -42,7 +36,7 @@
       <div class="panel-body">
         <%= link_to "New gist", new_gist_path, class: "list-group-item" %>
         <%= link_to "All gists", gists_path, class: "list-group-item" %>
-        <%= link_to "Search gists", searchgist_path, class: "list-group-item" %>
+	<a href="/gists/search" class="list-group-item">Search gists</a>
         <% if current_user %>
           <%= link_to "New Group", new_group_path, class: "list-group-item" %>
         <% end %>

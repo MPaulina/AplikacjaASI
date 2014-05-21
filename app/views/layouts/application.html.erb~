@@ -10,18 +10,22 @@
 </head>
 <body>
 
-  <div id="user-widget">
+ <div id="user-widget">
         <% if current_user %>
           Welcome <strong><%= current_user.name %></strong>!
           <%= link_to "Sign out", signout_path, id: "sign_out" %>
         <% else %>      
-		<%= link_to "Sign in with GitHub", "/auth/github", id: "sign_in", class: "btn btn-lg btn-default" %>
 
-	</br>
-
-          <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in", class: "btn btn-lg btn-default" %>   
-   <% end %>
-      </div>
+<nav class="navbar navbar-default" role="navigation">
+	<ul class="nav navbar-nav">
+		<li class="dropdown"> 
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign in<b class="caret"></b></strong></a> 
+				<ul class="dropdown-menu"> 
+					<li><a href="/auth/facebook" id="sign_in">Sign in with Facebook</a></li> 
+					<li><a href="/auth/github" id="sign_in">Sign in with GitHub</a></li> 
+				 </ul> </li> </ul> </nav>
+ <% end %>
+ </div>
 
   <div class="col-sm-4">
     <div class="panel panel-primary">
@@ -32,7 +36,8 @@
       <div class="panel-body">
         <%= link_to "New gist", new_gist_path, class: "list-group-item" %>
         <%= link_to "All gists", gists_path, class: "list-group-item" %>
-        <%= link_to "Search gists", searchgist_path, class: "list-group-item" %>
+	<a href="/gists/search" class="list-group-item">Search gists</a>        
+<!--<%= link_to "Search gists", searchgist_path, class: "list-group-item" %>-->
         <% if current_user %>
           <%= link_to "New Group", new_group_path, class: "list-group-item" %>
         <% end %>
