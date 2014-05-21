@@ -14,9 +14,8 @@
    <% if current_user %>
      <div class="alert alert-warning">
        Welcome <strong><%= current_user.name %></strong>    
-     <div class="wylogowanie">
-	 <%= link_to "Sign out", signout_path, id: "sign_out", class: "btn btn-default" %>
-     </div>
+<%= link_to "Sign out", signout_path, id: "sign_out", class: "btn btn-default" %>
+
  </div> 
    <% else %>      
      <nav class="navbar navbar-default" role="navigation">
