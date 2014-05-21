@@ -16,7 +16,7 @@ TRAVIS:
 [![Build Status](https://travis-ci.org/MPaulina/AplikacjaASI.svg?branch=master)](https://travis-ci.org/MPaulina/AplikacjaASI)
 
 Gemy: 
-- gem 'rails', '4.0.4'
+- gem 'rails', '4.1.0'
 - gem 'quiet_assets'
 - gem 'sqlite3', '1.3.8'
 - gem 'uglifier', '>= 1.3.0'
