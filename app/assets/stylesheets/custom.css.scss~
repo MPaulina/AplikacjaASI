@@ -105,7 +105,7 @@ strong {
 
 .user-widget {
 	font-size: 18px;
-background-color: 	#ff9933;	
+	background-color: 	#ff9933;	
 }
 
 .groups {
@@ -116,6 +116,7 @@ background-color: 	#ff9933;
 	font-size: 14px;
 	background-color: 	#ff9933;
 	text-align: right;
+	margin-right: 30px;
 }
 
 .log {
