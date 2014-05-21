@@ -20,9 +20,9 @@ class Gist < ActiveRecord::Base
 
   def self.search(search)
     if search
-      find(:all, :conditions => ['lang LIKE ?',"%#{search}%"])
+      where('description LIKE ?', "%#{search}%")
     else
-      find(:all)
+      where('')
     end
   end	
 end
