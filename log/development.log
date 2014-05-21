@@ -14200,3 +14200,45 @@ Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-20 15:10:28 +0200
 
 Started GET "/auth/facebook" for 127.0.0.1 at 2014-05-20 15:10:30 +0200
 (facebook) Request phase initiated.
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-21 10:38:52 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.3ms)[0m  SELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ?  ORDER BY created_at DESC LIMIT 1 OFFSET 0  [["id", "all"]]
+Completed 404 Not Found in 56ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with 'id'=all):
+  app/models/gist.rb:25:in `search'
+  app/controllers/gists_controller.rb:6:in `index'
+
+
+  Rendered /home/polina/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/polina/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/polina/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/polina/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.3ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-21 10:43:08 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.5ms)[0m  SELECT  "gists".* FROM "gists"   ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (325.4ms)
+  Rendered gists/index.html.erb within layouts/application (423.6ms)
+Completed 200 OK in 4965ms (Views: 4940.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/gists-search" for 127.0.0.1 at 2014-05-21 10:43:20 +0200
+Processing by GistsController#search as HTML
+  Rendered gists/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists?utf8=%E2%9C%93&search=b&commit=Search" for 127.0.0.1 at 2014-05-21 10:43:23 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"b", "commit"=>"Search"}
+  [1m[35mGist Load (0.5ms)[0m  SELECT  "gists".* FROM "gists"  WHERE (description LIKE '%b%')  ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  Rendered gists/_gist.html.erb (13.5ms)
+  Rendered gists/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.5ms)

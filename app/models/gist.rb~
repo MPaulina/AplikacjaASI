@@ -7,7 +7,7 @@ class Gist < ActiveRecord::Base
 
   validates :lang,
     presence: true,
-    length: { minimum: 3 }
+    length: { minimum: 1 }
 
   validates :description,
     presence: true,
